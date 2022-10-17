@@ -1,38 +1,107 @@
-.App {
+#main-div{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column wrap;
+  background-color: #B6BCFF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+header{
+  padding-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Buttons*/
+#buttons{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+#new-button >button{
+  border-radius: 10px;
+  background-color: #FFF8B6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: medium;
+}
+
+#play-button > button{
+  border-radius: 10px;
+  background-color: #FFF8B6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: medium;
+}
+
+/*Character Display*/
+#character-display{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#player-character{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 150px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
+#computer-character{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 150px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*Result*/
+#result{
+  text-align: center;
+  font-size: x-large;
+}
+
+/*Scores*/
+#scores{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#player-score{
+  margin-right: 50px;
+}
+
+
+/*Character select*/
+#character-select{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFF8B6;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#character-select > div > button{
+  background-color: #FFF8B6;
+  border: none;
+  border-radius: 100px;
+}
+
+#scissors{
+  border-radius: 100px;
+}
+
+
+/*Div styling*/
+.column{
+  flex:1 1 200px;
+  margin: 10px;
 }
